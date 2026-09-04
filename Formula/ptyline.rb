@@ -5,13 +5,13 @@
 class Ptyline < Formula
   desc "Lightweight terminal wrapper with a configurable bottom status bar"
   homepage "https://github.com/HSGiGa/ptyline"
-  version "0.9.5"
+  version "0.9.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.5/ptyline-darwin-arm64.tar.gz"
-      sha256 "d8faa597eac01028b16611649d152779252e9caef000e873ed2bcdbb22f84f45"
+      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.6/ptyline-darwin-arm64.tar.gz"
+      sha256 "a4c7569648f1d8905232bc0d8817197853145018aba6614a4a95bc20ce052e3e"
 
       define_method(:install) do
         bin.install "ptyline"
@@ -21,15 +21,15 @@ class Ptyline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.5/ptyline-linux-amd64.tar.gz"
-      sha256 "ffb54db30b3b8d9e374df8a2bc618b7b35878edf81ef73d6120d4ea1e6e19cfc"
+      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.6/ptyline-linux-amd64.tar.gz"
+      sha256 "cd74394a7b24e12aef9b27c6b54acaaf3456dff5f7705072e5d77ee51bc4284b"
       define_method(:install) do
         bin.install "ptyline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.5/ptyline-linux-arm64.tar.gz"
-      sha256 "cb12f30de0f2e8740b7349fc6c910c3731f30a0b917f5d8184932dbd00c789fc"
+      url "https://github.com/HSGiGa/ptyline/releases/download/v0.9.6/ptyline-linux-arm64.tar.gz"
+      sha256 "9f95bf1be2ee7fb2357574634696023f677acc8707839a85cee093312cdc343f"
       define_method(:install) do
         bin.install "ptyline"
       end
